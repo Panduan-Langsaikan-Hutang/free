@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Langsaikan Hutang - Bebas Beban Kewangan</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-emerald-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-xs">
+        <div class="max-w-md mx-auto px-4 py-3 flex items-center justify-between gap-2">
+            <div class="flex items-center space-x-2 min-w-0">
+                <div class="w-8 h-8 rounded-lg bg-emerald-600 flex items-center justify-center text-white font-bold text-xs shrink-0 shadow-sm">
+                    PLH
+                </div>
+                <span class="font-bold text-sm text-slate-900 tracking-tight truncate">Panduan Langsaikan Hutang</span>
+            </div>
+            <!-- Butang Header Warna Kuning Mencolok & Saiz Kemas -->
+            <button onclick="handleMainAction()" id="headerBtn" class="bg-yellow-400 hover:bg-yellow-500 text-slate-950 font-extrabold px-3 py-1.5 rounded-lg text-xs shadow-sm transition-all transform active:scale-95 shrink-0 cursor-pointer border border-yellow-500/30">
+                <span>Dapatkan Segera</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-md mx-auto bg-white min-h-screen shadow-xl pb-28">
+
+        <!-- Hero Section -->
+        <section class="px-5 pt-8 pb-6 text-center bg-gradient-to-b from-emerald-50/60 to-white">
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-semibold mb-4">
+                <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
+                Muat Turun Percuma Hari Ini
+            </div>
+            <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight mb-3">
+                Ketahui Rahsia Bebas Daripada Bebanan Hutang & Hidup Lebih Tenang
+            </h1>
+            <p class="text-sm sm:text-base text-slate-600 mb-6 leading-relaxed">
+                Panduan lengkap langkah demi langkah menguruskan kewangan, melangsaikan pinjaman, dan membina masa depan yang selamat tanpa tekanan.
+            </p>
+
+            <!-- Ilustrasi / Kotak E-Buku -->
+            <div class="relative max-w-[260px] mx-auto mb-6 transform hover:scale-102 transition-transform duration-300">
+                <div class="absolute -inset-1 bg-gradient-to-r from-emerald-600 to-teal-500 rounded-2xl blur-md opacity-30"></div>
+                <div class="relative bg-slate-900 text-white rounded-2xl p-6 shadow-xl border border-slate-800 text-left">
+                    <div class="text-[10px] tracking-wider uppercase font-bold text-emerald-400 mb-1">E-Buku Eksklusif</div>
+                    <div class="text-lg font-bold mb-3 leading-snug">Panduan Langsaikan Hutang Dalam 40 Hari</div>
+                    <div class="space-y-1.5 text-xs text-slate-300 mb-4">
+                        <div class="flex items-center gap-1.5">✓ Formula Minda & Akidah</div>
+                        <div class="flex items-center gap-1.5">✓ Strategi Langsaikan Pinjaman</div>
+                        <div class="flex items-center gap-1.5">✓ Pengurusan Aliran Tunai</div>
+                    </div>
+                    <div class="bg-emerald-600 text-center py-2 rounded-lg text-xs font-bold text-white shadow-inner">
+                        100% PERCUMA
+                    </div>
+                </div>
+            </div>
+
+            <!-- Butang Utama Call To Action -->
+            <button onclick="handleMainAction()" id="heroBtn" class="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg shadow-emerald-600/30 text-base transition-all transform active:scale-98 cursor-pointer flex items-center justify-center gap-2">
+                <span>Muat Turun Panduan Percuma</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+            </button>
+            <p class="text-xs text-slate-400 mt-2">Muat turun segera sebelum pautan akses ditutup.</p>
+        </section>
+
+        <!-- Pembahagi -->
+        <div class="h-2 bg-slate-100"></div>
+
+        <!-- Bahagian Masalah -->
+        <section class="px-5 py-6">
+            <h2 class="text-lg font-bold text-slate-900 mb-3 text-center">Adakah Anda Mengalami Situasi Ini?</h2>
+            <div class="space-y-3">
+                <div class="flex items-start gap-3 p-3 rounded-xl bg-red-50/50 border border-red-100 text-sm">
+                    <span class="text-red-500 font-bold text-base">✕</span>
+                    <span class="text-slate-700">Gaji bulanan habis semata-mata untuk bayar komitmen hutang tanpa baki simpanan?</span>
+                </div>
+                <div class="flex items-start gap-3 p-3 rounded-xl bg-red-50/50 border border-red-100 text-sm">
+                    <span class="text-red-500 font-bold text-base">✕</span>
+                    <span class="text-slate-700">Rasa tertekan, serabut, dan gelisah setiap kali memikirkan tunggakan pinjaman?</span>
+                </div>
+                <div class="flex items-start gap-3 p-3 rounded-xl bg-red-50/50 border border-red-100 text-sm">
+                    <span class="text-red-500 font-bold text-base">✕</span>
+                    <span class="text-slate-700">Buntu dan keliru dari mana harus bermula untuk menyusun semula kewangan keluarga?</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bahagian Manfaat & Penyelesaian -->
+        <section class="px-5 py-6 bg-slate-50/80">
+            <h2 class="text-lg font-bold text-slate-900 mb-4 text-center">Apa Yang Bakal Anda Pelajari?</h2>
+            <div class="grid grid-cols-1 gap-3">
+                <div class="bg-white p-4 rounded-xl border border-slate-200/80 shadow-xs flex items-start gap-3">
+                    <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold shrink-0">1</div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Pembersihan Minda & Akidah</h3>
+                        <p class="text-xs text-slate-600">Memperbetulkan niat dan cara pandang terhadap beban hutang mengikut panduan syarak yang sahih.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200/80 shadow-xs flex items-start gap-3">
+                    <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold shrink-0">2</div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Strategi Langsaikan Hutang Pantas</h3>
+                        <p class="text-xs text-slate-600">Teknik praktikal menyusun senarai pinjaman mengikut keutamaan agar lebih cepat selesai.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200/80 shadow-xs flex items-start gap-3">
+                    <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold shrink-0">3</div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Kawalan Aliran Tunai Harian</h3>
+                        <p class="text-xs text-slate-600">Cara mudah menguruskan perbelanjaan bulanan keluarga tanpa rasa sempit dan terbeban.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bahagian Testimoni -->
+        <section class="px-5 py-6">
+            <h2 class="text-lg font-bold text-slate-900 mb-4 text-center">Maklum Balas Pembaca</h2>
+            <div class="space-y-3">
+                <div class="bg-emerald-50/40 p-4 rounded-xl border border-emerald-100">
+                    <p class="text-xs text-slate-700 italic mb-2">"Alhamdulillah, panduan ini membuka mata saya cara menyusun semula bayaran kad kredit dan pinjaman peribadi. Sangat praktikal dan mudah difahami!"</p>
+                    <div class="font-bold text-xs text-slate-900">— En. Hafiz, Kuala Lumpur</div>
+                </div>
+                <div class="bg-emerald-50/40 p-4 rounded-xl border border-emerald-100">
+                    <p class="text-xs text-slate-700 italic mb-2">"Terima kasih atas perkongsian ilmu ini. Hati jadi lebih tenang dan nampak hala tuju yang jelas untuk melangsaikan komitmen bulanan."</p>
+                    <div class="font-bold text-xs text-slate-900">— Puan Salina, Johor Bahru</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner Penutup -->
+        <section class="px-5 py-8 text-center bg-slate-900 text-white rounded-b-2xl mx-0">
+            <h2 class="text-xl font-bold mb-2">Mulakan Langkah Pertama Anda</h2>
+            <p class="text-xs text-slate-300 mb-6">Miliki akses percuma e-buku Panduan Langsaikan Hutang hari ini.</p>
+            <button onclick="handleMainAction()" class="w-full bg-yellow-400 hover:bg-yellow-500 text-slate-950 font-extrabold py-3.5 px-6 rounded-xl shadow-md text-base transition-all transform active:scale-98 cursor-pointer">
+                Muat Turun Panduan Sekarang
+            </button>
+        </section>
+
+    </main>
+
+    <!-- Bar Bawah Melekat (Sticky Bottom Bar) -->
+    <div class="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 p-3 max-w-md mx-auto shadow-lg">
+        <button onclick="handleMainAction()" id="stickyBtn" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-xl shadow-md text-sm sm:text-base transition-all flex items-center justify-center gap-2 cursor-pointer">
+            <span>Muat Turun Panduan Percuma</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- POP-UP MODAL (100% Bahasa Malaysia) -->
+    <div id="downloadModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-2xl max-w-sm w-full p-6 text-center shadow-2xl transform transition-all">
+            <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">
+                ✓
+            </div>
+            <h3 class="text-lg font-extrabold text-slate-900 mb-2">Tahniah!</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mb-6 leading-relaxed">
+                Anda Telah Menyertai Komuniti Langsaikan Hutang. Sila muat turun buku panduan di bawah ini:
+            </p>
+            <a href="https://drive.google.com/file/d/1bGUmRBjkKT8-HCgOlafPF63S171T54cU/view" target="_blank" class="block w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-4 rounded-xl shadow-md text-sm transition-all mb-3 text-center">
+                Muat Turun Panduan Percuma
+            </a>
+            <div class="text-[11px] font-semibold text-slate-500 tracking-wide mt-2">
+                Hidup Aman • Tenang • Bebas Hutang
+            </div>
+            <button onclick="closeModal()" class="mt-4 text-xs text-slate-400 hover:text-slate-600 underline cursor-pointer">
+                Tutup Paparan
+            </button>
+        </div>
+    </div>
+
+    <!-- Logik JavaScript untuk Klik Bertahap & Pop-up -->
+    <script>
+        let clickStep = 0;
+        const shopeeLink1 = "https://s.shopee.co.id/8pmpMJhGfA";
+        const shopeeLink2 = "https://s.shopee.co.id/8fTPA65f8A";
+
+        function handleMainAction() {
+            if (clickStep === 0) {
+                // Klik Pertama: Buka pautan pertama di tab baharu
+                window.open(shopeeLink1, '_blank');
+                clickStep = 1;
+                updateButtonTexts("Klik Seterusnya (Langkah 2/3)", "Langkah 2/3");
+            } else if (clickStep === 1) {
+                // Klik Kedua: Buka pautan kedua di tab baharu
+                window.open(shopeeLink2, '_blank');
+                clickStep = 2;
+                updateButtonTexts("Klik Terakhir: Buka Panduan (3/3)", "Langkah 3/3");
+            } else if (clickStep === 2) {
+                // Klik Ketiga: Paparkan Pop-up Modal Muat Turun
+                openModal();
+            }
+        }
+
+        function updateButtonTexts(mainText, shortText) {
+            const heroBtn = document.getElementById('heroBtn');
+            const stickyBtn = document.getElementById('stickyBtn');
+            const headerBtn = document.getElementById('headerBtn');
+
+            if (heroBtn) heroBtn.querySelector('span').textContent = mainText;
+            if (stickyBtn) stickyBtn.querySelector('span').textContent = mainText;
+            if (headerBtn) headerBtn.querySelector('span').textContent = shortText;
+        }
+
+        function openModal() {
+            const modal = document.getElementById('downloadModal');
+            if (modal) modal.classList.remove('hidden');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('downloadModal');
+            if (modal) modal.classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
